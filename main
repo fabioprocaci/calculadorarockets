@@ -1,0 +1,45 @@
+def main():
+
+    while True:
+
+        a=0
+        b=0
+        
+        ops=input('0 para sair\n+ para somar\n - para subtrair\n* para multiplicar\n/ para dividir\n sqrt para raiz quadrada\n! para fatorial:\n')
+
+        if ops=='0':
+            break
+
+        if ops=='+':
+            a=float(input('digite o primeiro numero'))
+            b=float(input('digite o segundo numero'))
+
+            print(soma(a,b))
+
+        elif ops=='-':
+            a=float(input('digite o primeiro numero'))
+            b=float(input('digite o segundo numero'))
+
+            print(subtracao(a,b))
+
+        elif ops=='*':
+            a=float(input('digite o primeiro numero'))
+            b=float(input('digite o segundo numero'))
+
+            print(mult(a,b))
+
+        elif ops=='/':
+            a=float(input('digite o primeiro numero'))
+            b=float(input('digite o segundo numero'))
+
+            print(div(a,b))
+
+        elif ops=='sqrt':
+            a=float(input('digite o numero'))
+            print(raizquadrada(a))
+
+        elif ops=='!':
+
+            a=float(input('digite o numero'))
+
+            print(fatorial(a))
